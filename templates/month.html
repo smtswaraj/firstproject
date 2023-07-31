@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block message %}
+    <link rel="stylesheet" href="{% static 'mesage.css' %}">
+{% endblock %}
+{% block title %}
+    Monthly Message
+{% endblock %}
+{% block content %}
+    {% include 'incl.html'  %}
+    <h1>{{m|title}}</h1>
+    {% if message != None %}
+    <h1>{{message}}</h1>
+    {% else %}
+    <h1>No message for month {{m}}</h1>
+    {% endif %}
+{% endblock %}
+
+
+    
+
+

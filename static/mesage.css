@@ -1,0 +1,14 @@
+body{
+    color: rgb(247, 0, 255);
+}
+h3{
+    text-align: center;
+    width: 100%;
+    background-color: salmon;
+    
+}
+h3 a{
+    color: springgreen;
+    text-decoration: none;
+    font-size: 20px;
+}

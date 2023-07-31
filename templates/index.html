@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_file %}
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+{% endblock %}
+{% block title %}
+        Document
+{% endblock %}
+{% block content %}
+   <ul>
+        {% for i in data %}
+        <li><a href="{% url 'dis' i %}">{{i|title}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+

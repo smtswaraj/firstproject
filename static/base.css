@@ -1,0 +1,62 @@
+html{
+  /* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  font-family: 'Pacifico', cursive; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Courier New', Courier, monospace; */
+    color: rgb(249, 71, 255);
+}
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+    background-image: url("Nature.jpg");
+    /* background-image: url("64426.jpg"); */
+    /* background-image: url("64379.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+h3 a{
+  color: rgb(9, 247, 247);
+  text-decoration: none;
+}
+ul{
+  color: black;
+  border: 2px transparent rgb(0, 0, 0);
+  border-radius: 20px;
+  width: 30%;
+  padding: 0px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: auto auto auto;
+  box-sizing: border-box;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
+  /* justify-content: space-between;
+  list-style-type: none; */
+}
+html ul{
+  margin-top: 60px;
+}
+ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid blue; */
+  /* border-top-left-radius: 20px; */
+}
+li a{
+  text-decoration: none; 
+  color: rgb(0, 255, 21);
+  font-size: 20px;
+}
+li a:hover{
+  text-decoration: none; 
+  color: aliceblue;
+  cursor: pointer;
+}
+li:hover{
+  background-color: brown;
+  border-radius: 20px;
+}

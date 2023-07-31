@@ -1,0 +1,46 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <title>nav page of naukri</title> {% endcomment %}
+    {% block hade_c %}{% endblock %}
+    <link rel="stylesheet" href={% static "naukri_nav.css" %}>
+</head>
+<body>
+    <nav>
+        {% comment %} <h1>i am going to make naukri.com clone</h1> {% endcomment %}
+        <div>
+            <a href="http://127.0.0.1:8000/naukri"><img src={% static "naukri_Logo.png" %} height="31" width="186" class="fl nLogo" href="#" alt="Naukri Logo"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="{% url 'test' %}">Jobs</a></li>
+                <li><a href="https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch">Companies</a></li>
+                <li><a href="http://127.0.0.1:8000/mon">Services</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search job here">
+            <button class="btn1"><ion-icon name="search"></ion-icon></button>
+        </div>
+        <div>
+            <button class="notification"><ion-icon name="notifications-outline"></ion-icon></button>
+        </div>
+        <div class="profile">
+            <div class="rows">
+                <div class="row1"></div>
+                <div class="row2"></div>
+                <div class="row3"></div>
+            </div>
+            <!-- <ion-icon name="reorder-three-outline"></ion-icon> -->
+            <button class="btn1"><ion-icon name="person-circle-outline"></ion-icon></button>
+        </div>
+        
+    </nav>
+    {% block body %}{% endblock %}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
